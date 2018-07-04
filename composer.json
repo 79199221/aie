@@ -1,0 +1,17 @@
+{
+    "name": "ixiaozi/cms-for-laravel",
+    "description": "this is a test plug for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xiaozi",
+            "email": "xiaozi@ixiaozi.cn"
+        }
+    ],
+    "require": {},
+	"autoload": {
+		"psr-4": {
+			"Ixiaozi\\Multi\\": "src/"
+		}
+	}
+}
