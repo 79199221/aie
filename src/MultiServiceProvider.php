@@ -2,7 +2,9 @@
 
 namespace Ixiaozi\Multi;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+
 
 class MultiServiceProvider extends ServiceProvider
 {
@@ -10,7 +12,7 @@ class MultiServiceProvider extends ServiceProvider
 	 * 服务提供者是否延迟加载
 	 *
 	 */
-	 protected $defer = true;
+	 // protected $defer = true;
 	 
 	 
     /**
@@ -21,12 +23,13 @@ class MultiServiceProvider extends ServiceProvider
     public function boot()
     {
         // 视图
-		$this->loadViewsFrom(__DIR__ . '/views', 'Multi');
+		$this->loadViewsFrom(__DIR__ . '/views', 'multi');
+        $this->loadRoutesFrom(__DIR__.'/routes/web.php');
 		$this->publishes([
-			__DIR__ . '/views' => base_path('resources/views/vendor/multi'),
+			// __DIR__ . '/views' => base_path('resources/views/vendor/multi'),
 			__DIR__ . '/config/multi.php' => config_path('multi.php'),
+            __DIR__ . '/publish/routes/multi.php' => base_path('routes/multi.php'),
 		]);
-		$this->app['router']->get('multi', '\Ixiaozi\Multi\Controller\IndexController@index');
     }
 
     /**

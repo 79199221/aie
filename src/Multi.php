@@ -29,4 +29,7 @@ class Multi
         $config_arr = $this->config->get('test.options');
         return $msg.' <strong>from your custom develop package!</strong>';
     }
+    public function loadRoutes(){
+        require __DIR__ . '/Routes/web.php';
+    }
 }
