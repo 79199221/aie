@@ -11,4 +11,8 @@ use Illuminate\Http\Request;
 class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    public $route;
+    public function __construct(Request $request) {
+        $this->route = $request->route()->getName();
+    }
 }

@@ -170,6 +170,7 @@
 @endsection
 
 @section('foot')
+@include('multi::_footer')
 @endsection
 @section('script')
 @endsection

@@ -1,2 +1,2 @@
 # multi
-multi-lang website for laravel
+multi-lang for laravel

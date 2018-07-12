@@ -146,11 +146,30 @@
 		</dd>
 	</dl>
 		<dl id="menu-system">
+			<dt><i class="Hui-iconfont">&#xe62e;</i> 内容管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="{{url('admin/system')}}" data-title="系统设置" href="javascript:void(0)">首页管理</a></li>
+					<li><a data-href="{{url('admin/category')}}" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
+			</ul>
+		</dd>
+	</dl>
+		<dl id="menu-system">
+			<dt><i class="Hui-iconfont">&#xe62e;</i> 语言管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a data-href="{{route('multi::language.index')}}" data-title="语言设置" href="javascript:void(0)">语言设置</a></li>
+					<li><a data-href="{{route('multi::langdict.index')}}" data-title="语言字典" href="javascript:void(0)">语言字典</a></li>
+			</ul>
+		</dd>
+	</dl>
+		<dl id="menu-system">
 			<dt><i class="Hui-iconfont">&#xe62e;</i> 系统管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
 					<li><a data-href="{{url('admin/system')}}" data-title="系统设置" href="javascript:void(0)">系统设置</a></li>
-					<li><a data-href="{{url('admin/system/category')}}" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
+					<li><a data-href="{{url('admin/category')}}" data-title="栏目管理" href="javascript:void(0)">栏目管理</a></li>
+					<li><a data-href="{{url('admin/language')}}" data-title="语言" href="javascript:void(0)">语言</a></li>
 					<li><a data-href="{{url('admin/system')}}" data-title="数据字典" href="javascript:void(0)">数据字典</a></li>
 					<li><a data-href="{{url('admin/system')}}" data-title="屏蔽词" href="javascript:void(0)">屏蔽词</a></li>
 					<li><a data-href="{{url('admin/system')}}" data-title="系统日志" href="javascript:void(0)">系统日志</a></li>
@@ -165,7 +184,7 @@
 		<div class="Hui-tabNav-wp">
 			<ul id="min_title_list" class="acrossTab cl">
 				<li class="active">
-					<span title="我的桌面" data-href="welcome.html">我的桌面</span>
+					<span title="我的桌面" data-href="{{url('admin/welcome')}}">我的桌面</span>
 					<em></em></li>
 		</ul>
 	</div>

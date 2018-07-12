@@ -1,6 +1,6 @@
 {
-    "name": "ixiaozi/multi",
-    "description": "Multi-lang website plug for laravel",
+    "name": "ixiaozi/aie",
+    "description": "this is api integration for express plug base on laravel",
     "license": "MIT",
     "authors": [
         {
@@ -11,7 +11,7 @@
     "require": {},
 	"autoload": {
 		"psr-4": {
-			"Ixiaozi\\Multi\\": "src/"
+			"Ixiaozi\\Aie\\": "src/"
 		}
 	}
 }
