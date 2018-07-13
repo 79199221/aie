@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
 class AieServiceProvider extends ServiceProvider
 {
 	/**
-	 * 服务提供者是否延迟加载
+	 * 服务提供者是否延迟加�?
 	 *
 	 */
 	 // protected $defer = true;
@@ -41,10 +41,13 @@ class AieServiceProvider extends ServiceProvider
         $this->app->singleton('aie', function ($app) {
             return new Aie($app['session'], $app['config']);
         });
+        $this->app->singleton('eub', function ($app) {
+            return new Eub();
+        });
     }
 	public function provides()
     {
-        // 因为延迟加载 所以要定义 provides 函数 具体参考laravel 文档
+        // 因为延迟加载 �?以要定义 provides 函数 具体参�?�laravel 文档
         return ['aie'];
     }
 }

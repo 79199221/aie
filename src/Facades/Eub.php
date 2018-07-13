@@ -5,6 +5,6 @@ class Aie extends Facade
 {
     protected static function getFacadeAccessor()
     {
-        return 'aie';
+        return 'eub';
     }
 }
